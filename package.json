@@ -12,6 +12,7 @@
   "dependencies": {
     "consolidate": "^0.13.1",
     "grunt": "^0.4.5",
+    "jade": "^1.11.0",
     "metalsmith": "^2.0.1",
     "metalsmith-branch": "0.0.4",
     "metalsmith-collections": "^0.7.0",
