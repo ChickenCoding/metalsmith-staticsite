@@ -10,5 +10,7 @@ export const posts = {
   description: 'Some posts related seo stuff here'
 };
 
+export const theme = "default";
+
 export const source = './src';
 export const dest = './build';

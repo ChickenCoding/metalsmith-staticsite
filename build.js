@@ -9,7 +9,7 @@ import branch from 'metalsmith-branch';
 import excerpts from 'metalsmith-excerpts';
 import collections from 'metalsmith-collections';
 import permalinks from 'metalsmith-permalinks';
-import {site, source as src, dest, posts} from './config';
+import {site, source as src, dest, posts, theme} from './config';
 
 
 var app = Metalsmith(__dirname);
@@ -49,7 +49,7 @@ app.use(catchAllRoute);
 
 app.use(layouts({
   engine: 'jade',
-  directory: 'templates/layouts',
+  directory: `templates/${theme}/layouts`,
   default: 'default.jade',
   moment: moment
 }));
